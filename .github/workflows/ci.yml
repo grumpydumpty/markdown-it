@@ -2,9 +2,11 @@ name: CI
 
 on:
   push:
-  pull_request:
-  schedule:
-    - cron: '0 0 * * 3'
+    branches:
+        - non-existent branch
+#   pull_request:
+#   schedule:
+#     - cron: '0 0 * * 3'
 
 jobs:
   test:
